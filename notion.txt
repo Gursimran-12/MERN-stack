@@ -1,0 +1,62 @@
+# NOTION (Tasks)
+
+## TASK 1 (**Create a Documentation Page**)
+
+### 1. Create a new Notion page titled **“Project Documentation”**.
+
+Solution: The link for this task is as follows:
+
+[PROJECT DOCUMENTATION (Task 1)](https://www.notion.so/PROJECT-DOCUMENTATION-Task-1-2eaed8290d238035bc58e69cfe9aa9ed?pvs=21)
+
+
+## TASK 2 (**Template Usage**)
+
+### 1. Create or use a **Notion template** for documentation or meeting notes.
+
+Solution: The link for this task is as follows:
+
+[Work Focus: Project Workspace (Task 2)](https://www.notion.so/Work-Focus-Project-Workspace-Task-2-2ebed8290d23800cacddf6d681eeea9e?pvs=21)
+
+
+### 2. Explain why using a template is better than creating a document from scratch every time.
+
+Solution: Notion is a powerful productivity tool that helps to create pages for notes, tasks, projects, and more. It helps us to work easily and flexibly.
+
+**REASONS FOR USING TEMPLATES**
+
+- It saves time because you don’t have to recreate the same structure again and again.
+- Keeps your pages consistent in InDesign, format, and styles.
+- Reduces mistakes since the structure is already prepared.
+- Boosts productivity by letting you focus on content instead of formatting.
+- Makes team collaboration easier because everyone follows the same layout.
+- Reusable and customizable, so you can edit a template once and use it anytime.
+- Improves workflow by giving you a ready-made starting point.
+
+---
+
+## TASK 3 (**Sharing & Publishing**)
+
+### 1. Make the Notion document **public**.
+### 2. Enable **Share to web**.
+### 3. Copy and submit the public link.
+
+Solution: The public links are as follows: 
+
+- Web Link: [https://www.notion.so/PROJECT-DOCUMENTATION-Task-1-2eaed8290d238035bc58e69cfe9aa9ed?source=copy_link](https://www.notion.so/PROJECT-DOCUMENTATION-Task-1-2eaed8290d238035bc58e69cfe9aa9ed?pvs=21)
+- Live site Link: [https://cooperative-request-eae.notion.site/PROJECT-DOCUMENTATION-Task-1-2eaed8290d238035bc58e69cfe9aa9ed?source=copy_link](https://www.notion.so/PROJECT-DOCUMENTATION-Task-1-2eaed8290d238035bc58e69cfe9aa9ed?pvs=21)
+
+### 4. Explain the difference between **private**, **shared**, and **public** pages.
+
+Solution: The difference is as follows:
+
+| Feature | Private Page | Shared Page | Public Page |
+| --- | --- | --- | --- |
+| Access | Only the page owener can access it. | Only invited users can access. | Anyone with the link can access. |
+| Visibility | Completely hidden from others. | Visible only to selected people. | Visible on the open web |
+| Security Level | very high | High (controlled sharing) | Low (open Access) |
+| Collaboration | No collaboration possible | Real-time collaboration is possible. | Usually view only but we can enable editing as well. |
+| Editing Rights | Only owner can edit this. | Editing rights can be controlled (view/comment/edit) | Editing is usually disabled. |
+| Use Case | Personal notes, private drafts. | Team projects, group assignments, shared work. | Portfolios, reports, published pages. |
+| Link Access | No link sharing available | Link works only for invited users. | Public link works for anyone. |
+
+---
