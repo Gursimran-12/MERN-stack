@@ -1,0 +1,179 @@
+# Slack (Answers)
+
+### 1. How do you join a channel in an organization's Slack workspace? (**Joining & Channels)**
+
+Ans: Slack is a team communication and collaboration platform used by organizations, companies, and teams to communicate and collaborate in the workplace. The steps to join a channel in an organization's Slack workspace are as follows: 
+
+- Firstly, download Slack.
+- Create an account on Slack.
+- An invitation from your workplace is sent to you; accept it.
+- After entering the Workplace, go to the left sidebar and search for the channels, then click “join channel“ to be part of the channel.
+
+The steps above will help you join Slack.
+
+---
+
+### 2. When should you use a **channel** instead of a **direct message**? (**Channel vs Direct Message)**
+
+Ans: In Slack, there are two ways to communicate: channels and direct messages. But in certain scenarios, it is preferred to use a channel instead of a direct message, like 
+
+- When the information is relevant to the group, not just to a single individual.
+- If we want to send the same message to multiple people, it is more efficient to send a single message in a channel rather than sending direct messages to multiple users multiple times.
+- If the message is important, you want the conversation to be transparent and visible so that others can benefit from it.
+- When the discussion is about the projects.
+
+Therefore, the scenarios above show why you should use a channel instead of a direct message.
+
+---
+
+### 3. Why should we use **threads** instead of replying directly in the channel? (**Threaded Replies**)
+
+Ans: A thread is a reply to a specific message in a channel, rather than sending it in the direct chat. Here are the reasons why we should use threads instead of replying directly in the channel.
+
+- It is used to maintain the history.
+- To avoid clutter in the channel.
+- To keep the related discussions together.
+- To enhance productivity.
+
+---
+
+### 4 (a). What is the difference between `@channel`, `@here`, and `@username`? (**Mentions & Notifications**)
+
+Ans: The difference between @channel, @here, and @username is as follows:
+
+| Commands | Who gets notified | When to use |
+| --- | --- | --- |
+| 1. @channel | All the members present in the group are notified even if they are inactive or offline. | For Important announcement to the entire team. |
+| 2. @here | The members who are active or online only those will be notified. | It is used when we want to take help from the active users. |
+| 3. @username | Only the specific person is notified who has been mentioned. | When the message is only for a specific person. |
+
+Therefore, the table above shows the differences between these three commands.
+
+### 4 (b). When should each be used? (**Mentions & Notifications**)
+
+Ans: The usage of @channel, @here, and @username is as follows:
+
+- @channel: This notifies all channel members, even if they are inactive or offline. It is used when the message is important for the entire team.
+- @here: Notifies only active, online people in the channel.
+- @username: This is used to notify the specific member present in the group.
+
+---
+
+### 5. What is the correct way to share code or logs in Slack? (**Sharing Code & Files**)
+
+Ans: The correct way to share code or logs in Slack is as follows:
+
+**First way:**
+
+- Firstly, open the channel where you want to share code or logs.
+- On the left-hand side, there is a ‘+’ sign; click on that.
+- There are many options available, such as a list, a text snippet, a workflow, and uploading from your computer.
+- Select a text snippet and paste your code there.
+- We can also select Upload from your computer to share our code as a file.
+
+**Second way:**
+
+- Open Slack.
+- Copy your code.
+- Type three backticks (```) in Slack.
+- Paste your code.
+- Again, type three backticks for the closing purpose.
+
+---
+
+### 6. List **2–3 best practices** you should follow while communicating in an organization’s Slack. (**Professional Slack Etiquette (Important))**
+
+Ans: While communicating in an organization’s Slack, we must follow the following practices:
+
+- We should be very professional and clear while conveying the information.
+- We must respond to the messages that are specifically for us.
+- Use proper mediums (channels or threads) to keep the conversation organized.# Slack (Answers)
+
+### 1. How do you join a channel in an organization's Slack workspace? (**Joining & Channels)**
+
+Ans: Slack is a team communication and collaboration platform used by organizations, companies, and teams to communicate and collaborate in the workplace. The steps to join a channel in an organization's Slack workspace are as follows: 
+
+- Firstly, download Slack.
+- Create an account on Slack.
+- An invitation from your workplace is sent to you; accept it.
+- After entering the Workplace, go to the left sidebar and search for the channels, then click “join channel“ to be part of the channel.
+
+The steps above will help you join Slack.
+
+---
+
+### 2. When should you use a **channel** instead of a **direct message**? (**Channel vs Direct Message)**
+
+Ans: In Slack, there are two ways to communicate: channels and direct messages. But in certain scenarios, it is preferred to use a channel instead of a direct message, like 
+
+- When the information is relevant to the group, not just to a single individual.
+- If we want to send the same message to multiple people, it is more efficient to send a single message in a channel rather than sending direct messages to multiple users multiple times.
+- If the message is important, you want the conversation to be transparent and visible so that others can benefit from it.
+- When the discussion is about the projects.
+
+Therefore, the scenarios above show why you should use a channel instead of a direct message.
+
+---
+
+### 3. Why should we use **threads** instead of replying directly in the channel? (**Threaded Replies**)
+
+Ans: A thread is a reply to a specific message in a channel, rather than sending it in the direct chat. Here are the reasons why we should use threads instead of replying directly in the channel.
+
+- It is used to maintain the history.
+- To avoid clutter in the channel.
+- To keep the related discussions together.
+- To enhance productivity.
+
+---
+
+### 4 (a). What is the difference between `@channel`, `@here`, and `@username`? (**Mentions & Notifications**)
+
+Ans: The difference between @channel, @here, and @username is as follows:
+
+| Commands | Who gets notified | When to use |
+| --- | --- | --- |
+| 1. @channel | All the members present in the group are notified even if they are inactive or offline. | For Important announcement to the entire team. |
+| 2. @here | The members who are active or online only those will be notified. | It is used when we want to take help from the active users. |
+| 3. @username | Only the specific person is notified who has been mentioned. | When the message is only for a specific person. |
+
+Therefore, the table above shows the differences between these three commands.
+
+### 4 (b). When should each be used? (**Mentions & Notifications**)
+
+Ans: The usage of @channel, @here, and @username is as follows:
+
+- @channel: This notifies all channel members, even if they are inactive or offline. It is used when the message is important for the entire team.
+- @here: Notifies only active, online people in the channel.
+- @username: This is used to notify the specific member present in the group.
+
+---
+
+### 5. What is the correct way to share code or logs in Slack? (**Sharing Code & Files**)
+
+Ans: The correct way to share code or logs in Slack is as follows:
+
+**First way:**
+
+- Firstly, open the channel where you want to share code or logs.
+- On the left-hand side, there is a ‘+’ sign; click on that.
+- There are many options available, such as a list, a text snippet, a workflow, and uploading from your computer.
+- Select a text snippet and paste your code there.
+- We can also select Upload from your computer to share our code as a file.
+
+**Second way:**
+
+- Open Slack.
+- Copy your code.
+- Type three backticks (```) in Slack.
+- Paste your code.
+- Again, type three backticks for the closing purpose.
+
+---
+
+### 6. List **2–3 best practices** you should follow while communicating in an organization’s Slack. (**Professional Slack Etiquette (Important))**
+
+Ans: While communicating in an organization’s Slack, we must follow the following practices:
+
+- We should be very professional and clear while conveying the information.
+- We must respond to the messages that are specifically for us.
+- Use proper mediums (channels or threads) to keep the conversation organized.
