@@ -25,15 +25,57 @@ function loginCredentials() {
         }
     }
     else{
-        console.log(`Invalid user name`);
-        if(password === passcode) {
-            console.log(`Valid password, but Invalid email`);
-            alert(`Sorry ${user}! you will not be able to login as email is not valid`);
-        }
-
-        else {
-            console.log(`Both Email and password are Incorrect`);
-            alert(`Sorry ${user}! you won't be able to login as both email and password are invalid`);
-        }
+        console.log(`Invalid username, so you won't be able to login`);
+        alert(`Sorry! you won't be able to login`)
     }
 }
+
+
+
+/*
+// Implementing the switch statement
+// Getting input from user
+let a = parseInt(prompt(`Enter the first number`));
+let b = parseInt(prompt(`Enter the second number`));
+
+// For storing the value of c
+let c;
+let num = prompt(`Enter any operator (+,-,*,/)`);
+
+//Starting the switch block
+switch(num)
+{
+    case "+": //Addition
+    {
+        c = a + b;
+        alert(`The Addition of ${a} and ${b} is ${c}`);
+        break;
+    }
+
+    case "-": //Subtraction
+    {
+        c = a - b;
+        alert(`The Subtraction of ${a} and ${b} is ${c}`);
+        break;
+    }
+
+    case "*": // Multiplication
+    {
+        c = a * b;
+        alert(`The product of ${a} and ${b} is ${c}`);
+        break;
+    }
+
+    case "/": // Division
+    {
+        c = a / b;
+        alert(`The result for the division is ${c}`);
+        break;
+    }
+
+    default: // Invalid Result
+    {
+        alert(`Invalid operations`);
+    }
+}
+*/
