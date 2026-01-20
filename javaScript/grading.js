@@ -1,3 +1,44 @@
+// Switch Statement
+let a = parseInt(prompt(`Enter the first number`));
+let b = parseInt(prompt(`Enter the Second number`));
+let c;
+
+let num = prompt(`Enter the operator (+,-,*,/)`);
+switch (num) {
+    case "+": //Addition
+        {
+            c = a + b;
+            alert(`The Addition of ${a} and ${b} is ${c}`);
+            break;
+        }
+
+    case "-": //Subtraction
+        {
+            c = a - b;
+            alert(`The Subtraction of ${a} and ${b} is ${c}`);
+            break;
+        }
+
+    case "*": // Multiplication
+        {
+            c = a * b;
+            alert(`The product of ${a} and ${b} is ${c}`);
+            break;
+        }
+
+    case "/": // Division
+        {
+            c = a / b;
+            alert(`The result for the division is ${c}`);
+            break;
+        }
+
+    default: // Invalid Result
+        {
+            alert(`Invalid operations`);
+        }
+}
+
 /*
 console.log(`Hey! this is a Grading System`);
 let marks = parseInt(prompt(`Enter the marks here (0 - 100)`));
@@ -124,7 +165,7 @@ alert(`${result}`);
 let savedMoney = 2000;
 let amount;
 let money;
-let i= 15;
+let i = 15;
 do {
     let operation = parseInt(prompt(`ATM MENU
     1. Withdraw
@@ -187,7 +228,7 @@ do {
     }
     i--;
 
-} while(i>1);
+} while (i > 1);
 
 
 
@@ -204,7 +245,7 @@ do {
     2. Deposit
     3. Check Balance
     4. Exit
-    
+
     Enter the number related to you choice (1/2/3/4):`));
     switch (operation) {
         case 1:
@@ -276,9 +317,9 @@ do {
 // a = 30;
 // console.log(`The value of (a) after reassignment is ${a}`);
 
-/* When we declare the values using var then we can redeclare them as well and 
-moreover their scope is global means if we display them earlier using the console 
-and then declare them, then this will not show any error rather they will show undefined 
+/* When we declare the values using var then we can redeclare them as well and
+moreover their scope is global means if we display them earlier using the console
+and then declare them, then this will not show any error rather they will show undefined
 on the console, this is called hoisting */
 
 // Using const
@@ -289,7 +330,7 @@ on the console, this is called hoisting */
 
 // console.log(`The value of (b) after reassignment is ${b}`);
 // const b = 20;
-// console.log(`The value of (b) after redeclaration ${b}`); 
+// console.log(`The value of (b) after redeclaration ${b}`);
 
 /* This will show an error, as redeclaration of the const is not possible  (Syntax Error)*/
 
