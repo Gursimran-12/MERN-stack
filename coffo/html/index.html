@@ -7,80 +7,69 @@
     <title> Coffo </title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
+
 </head>
 
 <body>
     <nav>
-        <ul>
-            <li> <a href="index.html">
-                    <h2> COFFO </h2>
-                </a> </li>
+
+        <div class="logo">COFFO</div>
+
+        <!-- Hamburger Toggle -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="menu">
             <li><a href="index.html" class="active">HOME</a></li>
-            <li> <a href="aboutUs.html"> ABOUT </a> </li>
-            <li> <a href="coffee.html"> COFFEES </a> </li>
-            <li> <a href="shop.html"> SHOP </a> </li>
-            <li> <a href="blog.html"> BLOG </a> </li>
-            <li> <a href="contact.html"> CONTACT </a> </li>
-            <li> <a href="#"> <i class="fa-solid fa-user"> LOGIN </i> </a> </li>
-            <li> <a href="#"> <i class="fa-solid fa-search"></i> </a> </li>
+            <li><a href="aboutUs.html">ABOUT</a></li>
+            <li><a href="coffee.html">COFFEES</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i> LOGIN</a></li>
+            <li><a href="#"><i class="fa-solid fa-search"></i></a></li>
         </ul>
+
     </nav>
 
     <div class="row1">
 
-        <div class="testimonial-slider hero-version">
+        <input type="radio" name="switch" id="one" checked>
+        <input type="radio" name="switch" id="two">
 
-            <!-- radio buttons -->
-            <input type="radio" name="heroslider" id="hslide1" checked>
-            <input type="radio" name="heroslider" id="hslide2">
-            <input type="radio" name="heroslider" id="hslide3">
+        <div class="hero-slides">
+            <div class="hero-box">
+                <h1>Coffee Shop</h1>
+                <p>Enjoy freshly brewed coffee every day.</p>
 
-            <!-- slides -->
-            <div class="slides">
-
-                <div class="slide">
-                    <div class="content">
-                        <h3> Coffee <br> Shop </h3>
-                        <p>more-or-less normal distribution of letters, as opposed to using</p>
-                    </div>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-red">ABOUT US</a>
+                    <a href="#" class="btn-white">CALL NOW</a>
                 </div>
-
-                <div class="slide">
-                    <div class="content">
-                        <h3> Coffee <br> Shop </h3>
-                        <p>more-or-less normal distribution of letters, as opposed to using</p>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="content">
-                         <h3> Coffee <br> Shop </h3>
-                        <p>more-or-less normal distribution of letters, as opposed to using</p>
-                    </div>
-                </div>
-
             </div>
 
-            <div class="hero-arrow-box">
+            <div class="hero-box">
+                <h1>Coffee Shop</h1>
+                <p>Enjoy freshly brewed coffee every day.</p>
 
-                <div class="arrow left">
-                    <label for="hslide3">&#8592;</label>
-                    <label for="hslide1">&#8592;</label>
-                    <label for="hslide2">&#8592;</label>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-red">ABOUT US</a>
+                    <a href="#" class="btn-white">CALL NOW</a>
                 </div>
-
-                <div class="arrow right">
-                    <label for="hslide2">&#8594;</label>
-                    <label for="hslide3">&#8594;</label>
-                    <label for="hslide1">&#8594;</label>
-                </div>
-
             </div>
 
         </div>
+        <div class="hero-arrows">
+            <label for="one">&#8592;</label>
+            <label for="two">&#8594;</label>
+        </div>
 
     </div>
+
 
 
     <div class="row2">
@@ -94,6 +83,8 @@
                             content here',
                             making it look like readable English. Many desktop publishing packages and web page
                             editorhas a more-or-less normal distribution of letters, as oppos</p>
+                        <a href="#" class="outline-btn">READ MORE</a>
+
 
                     </div>
                 </div>
@@ -105,82 +96,88 @@
 
 
         <div class="row3">
-            <div class="row3">
-                <h3> OUR COFFEE OFFER </h3>
+            <h3> OUR COFFEE OFFER </h3>
 
-                <div class="coffee-slider">
+            <div class="coffee-slider">
 
-                 
-                    <input type="radio" name="cs" id="cs1" checked>
-                    <input type="radio" name="cs" id="cs2">
 
-                   
-                    <div class="cs-track">
+                <input type="radio" name="cs" id="cs1" checked>
+                <input type="radio" name="cs" id="cs2">
 
-                        
-                        <div class="cs-group">
-                            <div class="cs-card">
-                                <img src="../images/coffee1.png">
-                                <h4>TYPES OF COFFEE</h4>
-                                <p>looking at its layout.</p>
-                            </div>
 
-                            <div class="cs-card">
-                                <img src="../images/coffee2.png">
-                                <h4>BEAN VARIETIES</h4>
-                                <p>looking at its layout.</p>
-                            </div>
+                <div class="cs-track">
 
-                            <div class="cs-card">
-                                <img src="../images/coffee3.png">
-                                <h4>COFFEE & PASTRY</h4>
-                                <p>looking at its layout.</p>
-                            </div>
 
-                            <div class="cs-card">
-                                <img src="../images/coffee4.png">
-                                <h4>COFFEE TO GO</h4>
-                                <p>looking at its layout.</p>
-                            </div>
+                    <div class="cs-group">
+                        <div class="cs-card">
+                            <img src="../images/coffee1.png">
+                            <h4>TYPES OF COFFEE</h4>
+                            <p>looking at its layout.</p>
+                            <a href="#" class="read-btn">READ MORE</a>
                         </div>
 
-                      
-                        <div class="cs-group">
-                            <div class="cs-card">
-                                <img src="../images/coffee1.png">
-                                <h4>TYPES OF COFFEE</h4>
-                                <p>looking at its layout.</p>
-                            </div>
-
-                            <div class="cs-card">
-                                <img src="../images/coffee2.png">
-                                <h4>BEAN VARIETIES</h4>
-                                <p>looking at its layout.</p>
-                            </div>
-
-                            <div class="cs-card">
-                                <img src="../images/coffee3.png">
-                                <h4>COFFEE & PASTRY</h4>
-                                <p>looking at its layout.</p>
-                            </div>
-
-                            <div class="cs-card">
-                                <img src="../images/coffee4.png">
-                                <h4>COFFEE TO GO</h4>
-                                <p>looking at its layout.</p>
-                            </div>
+                        <div class="cs-card">
+                            <img src="../images/coffee2.png">
+                            <h4>BEAN VARIETIES</h4>
+                            <p>looking at its layout.</p>
+                            <a href="#" class="read-btn">READ MORE</a>
                         </div>
 
+                        <div class="cs-card">
+                            <img src="../images/coffee3.png">
+                            <h4>COFFEE & PASTRY</h4>
+                            <p>looking at its layout.</p>
+                            <a href="#" class="read-btn">READ MORE</a>
+                        </div>
+
+                        <div class="cs-card">
+                            <img src="../images/coffee4.png">
+                            <h4>COFFEE TO GO</h4>
+                            <p>looking at its layout.</p>
+                            <a href="#" class="read-btn">READ MORE</a>
+                        </div>
                     </div>
 
-                  
-                    <label for="cs1" class="cs-left">‹</label>
-                    <label for="cs2" class="cs-right">›</label>
+
+                    <div class="cs-group">
+                        <div class="cs-card">
+                            <img src="../images/coffee1.png">
+                            <h4>TYPES OF COFFEE</h4>
+                            <p>looking at its layout.</p>
+                            <a href="#" class="read-btn">READ MORE</a>
+                        </div>
+
+                        <div class="cs-card">
+                            <img src="../images/coffee2.png">
+                            <h4>BEAN VARIETIES</h4>
+                            <p>looking at its layout.</p>
+                            <a href="#" class="read-btn">READ MORE</a>
+                        </div>
+
+                        <div class="cs-card">
+                            <img src="../images/coffee3.png">
+                            <h4>COFFEE & PASTRY</h4>
+                            <p>looking at its layout.</p>
+                            <a href="#" class="read-btn">READ MORE</a>
+                        </div>
+
+                        <div class="cs-card">
+                            <img src="../images/coffee4.png">
+                            <h4>COFFEE TO GO</h4>
+                            <p>looking at its layout.</p>
+                            <a href="#" class="read-btn">READ MORE</a>
+                        </div>
+                    </div>
 
                 </div>
-            </div>
 
+
+                <label for="cs1" class="cs-left">‹</label>
+                <label for="cs2" class="cs-right">›</label>
+
+            </div>
         </div>
+
 
         <div class="row4">
             <div class="testimonial-slider">
@@ -189,7 +186,7 @@
                 <input type="radio" name="slider" id="slide2">
                 <input type="radio" name="slider" id="slide3">
 
-                
+
                 <div class="slides">
                     <div class="slide">
                         <img src="../images/client.png">
@@ -213,32 +210,15 @@
                         </div>
                     </div>
 
-                    <div class="slide">
-                        <img src="../images/client.png">
-                        <div class="content">
-                            <h3>Sarah Lee</h3>
-                            <p>
-                                It has survived not only five centuries, but also the leap into
-                                electronic typesetting.
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="arrow-box">
-
-                    <div class="arrow right">
-                        <label for="slide2">&#8594;</label>
-                        <label for="slide3">&#8594;</label>
-                        <label for="slide1">&#8594;</label>
+                    <div class="arrow">
+                        <label for="slide1">&#8592;</label> 
+                        <label for="slide2">&#8594;</label> 
                     </div>
-
-                    <div class="arrow left">
-                        <label for="slide3">&#8592;</label>
-                        <label for="slide1">&#8592;</label>
-                        <label for="slide2">&#8592;</label>
-                    </div>
-
                 </div>
+
 
 
             </div>
@@ -251,15 +231,31 @@
                 <h3> OUR BLOG </h3>
                 <div class="cards">
                     <div class="card">
+                        <div class="date-badge">05 APRIL</div>
                         <img src="../images/blog-img1.png" alt="Flashcard-1">
-                        <p> This is first Flashcard </p>
+                        <h3> PREP TECHNIQUES Coffee </h3>
+                        <p> distracted by the readable content of a page when looking at its layout.
+                            The point of using Lorem Ipsum is that it has a moredistracted by the readable
+                            content of a page when looking at its layout. The point of using Lorem Ipsum
+                            is that it has a more </p>
+                        <a href="#" class="blog-read-btn">READ MORE</a>
+
+
                     </div>
 
                     <div class="card">
+                        <div class="date-badge">05 APRIL</div>
                         <img src="../images/blog-img2.png" alt="Flashcard-2">
-                        <p> This is second Flashcard </p>
+                        <h3> Enjoy Best Coffee </h3>
+                        <p> distracted by the readable content of a page when looking at its layout.
+                            The point of using Lorem Ipsum is that it has a moredistracted by the
+                            readable content of a page when looking at its layout. The point of using
+                            Lorem Ipsum is that it has a more </p>
+                        <a href="#" class="blog-read-btn">READ MORE</a>
+
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -290,6 +286,8 @@
                 <a href="#" class="social-icons-facebook"> <i id="s-icon" class="fab fa-facebook-f"> </i> </a>
                 <a href="#" class="social-icons-instagram"> <i id="s-icon" class="fab fa-instagram"> </i></a>
                 <a href="#" class="social-icons-twitter"> <i id="s-icon" class="fab fa-twitter"> </i> </a>
+                <a href="#" class="social-icons-linkedin"> <i id="s-icon" class="fa-brands fa-linkedin"> </i> </a>
+
             </div> <br>
 
             <i id="c-icon" class="fas fa-phone"> +01 1234567890 </i>
