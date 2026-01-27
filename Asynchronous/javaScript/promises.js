@@ -61,7 +61,7 @@ myPromise.then((result) => {
     console.log("Recieved from promises:", result);
 });
 console.log("Program ended");
-*/
+
 
 // Using the catch ()
 
@@ -76,6 +76,10 @@ myPromise.catch((error) => {
     console.log("Error:", error);
 });
 console.log(myPromise);
+*/
+
+
+
 
 
 

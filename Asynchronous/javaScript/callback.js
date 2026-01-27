@@ -123,3 +123,4 @@ function msg()
 }
 
 loadData("Practicing callback concepts", msg);
+
