@@ -1,6 +1,7 @@
 let button = document.getElementById("menuBtn");
 let menu = document.getElementById("menu");
 
-button.onclick = function () {
+button.addEventListener('click',(e) => {
   menu.classList.toggle("show");
-};
+})
+
