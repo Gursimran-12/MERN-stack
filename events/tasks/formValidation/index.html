@@ -13,23 +13,19 @@
 
     </div>
     <div class="row">
+        <span id="emailError"> Note: Email is a required field!</span>
+        <span id="passError"> Note: Password is a required field!</span>
+        <span id="result"> Form Submitted Successfully </span>
         <div id="short" class="box">
             <h2 id="topHead"> REGISTRATION FORM </h2>
-            <form onsubmit="return validateForm()">
+            <form id="myForm">
                 <input id="username" type="text" placeholder="Write your Name here"> <br>
                 <input id="age" type="number" placeholder="Write your Age here"> <br>
                 <input id="emailId" type="email" placeholder="Write your Email here"> <br>
                 <input id="uPassword" type="password" placeholder="Write your password here"> <br>
-
                 <button id="btn" type="submit"> Submit </button>
             </form>
-        </div>
-        <div class="error">
-            <h4> Note: Name is a required field, kindly fill it ! </h4>
-        </div>
 
-        <div class="error1">
-            <h4> Note: Email is a required field, kindly fill it ! </h4>
         </div>
     </div>
     <script src="./javaScript/script.js"> </script>
