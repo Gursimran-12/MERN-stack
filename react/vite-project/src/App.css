@@ -1,0 +1,42 @@
+/* Styling the main body of the card */
+#box {
+  background-color: #FBDBD5;
+  color: black;
+  width: 300px;
+  height: 350px;
+  margin: 50px;
+  border-radius: 15px;
+  border: solid 3px black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+/* Styling the box */
+#btn
+{
+  padding: 15px;
+  background-color: #9ACDD9;
+  color: black;
+  border-radius: 15px;
+  border: solid 2px black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#btn:hover
+{
+  background-color: black;
+  color: white;
+}
+
+/* Styling the Picture */
+#reactPic
+{
+  height: 100px;
+  width: 100px;
+}
+
+#reactPic:hover
+{
+  transform: scale(0.9);
+}
