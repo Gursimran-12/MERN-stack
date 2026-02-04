@@ -9,6 +9,7 @@ function App() {
     // counter = counter + 1;
     // console.log(counter);
     setCounter(counter+1);
+    setCounter(prev => prev +1);
   }
 
   function decr() // Function to decrement the value of the counter
