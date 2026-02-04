@@ -90,7 +90,7 @@ function display(a,b,c,...rest)
 display(1,2,3,...nums)
 
 
-//***********************************************************************************************************
+// ***********************************************************************************************************
 // Using arguement[]
 // arguments[]: This is an array-like object. It is a built-in local variable available within all non-arrow functions
 
@@ -100,4 +100,6 @@ function sum() {
 }
 sum(3, 5, ...numbers);
 
-
+// ********************************************************************************************************
+// TASKS RELATED TO THIS
+// Sum of unknown number of variables
