@@ -186,6 +186,7 @@ article {
     height: 300px;
     object-fit: cover;
     margin-bottom: 10px;
+    transition: 0.4s;
 }
 
 
@@ -354,7 +355,7 @@ footer {
         padding: 12px 20px;
     }
 
-        .container {
+    .container {
         width: 95%;
     }
 
