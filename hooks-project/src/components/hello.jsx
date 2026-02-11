@@ -1,7 +1,7 @@
 import React, {memo} from 'react'
 
 const HelloWorld = () => {
-  console.log("Rendered!")
+  console.log("Hello World Rendered!")
   return (
     <div>Hello World</div>
   )
