@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HelloWorld from "./components/hello";
+import MemoPrac from "./components/button"
 
 const Memo = () => {
   const [counter, setCounter] = useState(0);
@@ -9,10 +10,11 @@ const Memo = () => {
   }
   return (
     <>
-      <h1>This is Title</h1>
+      <h1> {counter} </h1>
       <button onClick={handleClick}>Re-Render</button>
 
       <HelloWorld  />
+      <MemoPrac />
     </>
   );
 };
