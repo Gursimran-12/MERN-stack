@@ -1,19 +1,23 @@
-import { useState } from "react";
-import { v4 as uuid } from "uuid";
+import { useState } from "react"
+import { v4 as uuid } from "uuid"
 
-function IdGenerator() {
-  const [id, setId] = useState("");
+function IdGenerator()
+{
+  const [id, setId] = useState("")
 
-  function generateId() {
+  function getId()
+  {
     setId(uuid());
   }
 
-  return (
-    <div>
-      <button onClick={generateId}>Generate UUID</button>
-      <h3>{id}</h3>
-    </div>
-  );
+
+  return(
+    <>
+    <button onClick={getId}> Generate Id </button>
+    <h3> {id} </h3>
+    </>
+  )
+
 }
 
-export default IdGenerator;
+export default IdGenerator
