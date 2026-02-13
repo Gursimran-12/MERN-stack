@@ -1,0 +1,166 @@
+#root {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    overflow: auto;
+}
+
+
+/* Main Cards */
+.todo-app {
+    width: 50%;
+    max-width: 340px;
+    background: #fff;
+    margin: 40px 20px;
+    padding: 25px;
+    border-radius: 10px;
+    float: left;
+    color: black;
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 25px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px; 
+    color: black;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    background: #ff5945;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 45px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #555;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+
+@media (max-width: 600px) {
+
+    .todo-app {
+        width: 100%;
+        float: none;   
+        margin: 20px auto;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    input {
+        font-size: 13px;
+    }
+}
+
+/* Child Component Card */
+.card-manager {
+  text-align: center;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.add-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.card-container {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
