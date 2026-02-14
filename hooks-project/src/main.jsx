@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')).render(
   // <App />
   // <UseRef />
   // <Memo />
-  // <Text />
-  <Login />
+  <Text />
+  // <Login />
   // <IdGenerator />
 )

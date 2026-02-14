@@ -93,12 +93,13 @@ do
 
 // Displaying Table using for loop
 
-let table = parseInt(prompt(`Input the number whose table you want`));
-console.log(`Displaying the table of ${table}`);
-let result;
+// let table = parseInt(prompt(`Input the number whose table you want`));
+// console.log(`Displaying the table of ${table}`);
+// let result;
 
-for(let i=0; i<=10; i++)
-{
-    result = table * i;
-    console.log(`${table} X ${i} = ${result} `)
-}
+// for(let i=0; i<=10; i++)
+// {
+//     result = table * i;
+//     console.log(`${table} X ${i} = ${result} `)
+// }
+

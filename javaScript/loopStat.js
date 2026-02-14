@@ -283,24 +283,45 @@ console.log(`${str}`);
 //  ***
 // *****
 
-let num = 4;
-let str="";
-for(let i=1; i<=num; i++)
+// let num = 4;
+// let str="";
+// for(let i=1; i<=num; i++)
+// {
+//     for(let k=1; k<=num-i; k++)
+//     {
+//         str += " ";
+//     }
+//     for(let j=1; j<=num; j++)
+//     {
+//         if(j<=i)
+//         {
+//             str += "*";
+//         }
+//     }
+//     for(let l=1; l<i; l++)
+//     {
+//             str += "*";
+//     }
+//     str += "\n";
+// }
+// console.log(`${str}`);
+
+
+// Displaying the second pattern
+// *
+// **
+// ***
+// ****
+// *****
+
+let num = parseInt(prompt(`Enter the number till where you want to print the pattern`));
+let str = "";
+
+for(let i=0; i<num; i++)
 {
-    for(let k=1; k<=num-i; k++)
+    for (let j=0; j<=i; j++)
     {
-        str += " ";
-    }
-    for(let j=1; j<=num; j++)
-    {
-        if(j<=i)
-        {
-            str += "*";
-        }
-    }
-    for(let l=1; l<i; l++)
-    {
-            str += "*";
+        str += "* ";
     }
     str += "\n";
 }

@@ -30,9 +30,13 @@
             <li><a href="shop.html">SHOP</a></li>
             <li><a href="blog.html">BLOG</a></li>
             <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="#"><i class="fa-solid fa-user"></i> LOGIN</a></li>
+            <li id="login-btn"><a href="#"><i class="fa-solid fa-user"></i> LOGIN</a></li>
             <li><a href="#"><i class="fa-solid fa-search"></i></a></li>
         </ul>
+
+        <div style="z-index: 99999; display: none;" id="login-Modal" isopened>
+            Modal
+        </div>
 
     </nav>
 
@@ -304,6 +308,24 @@
         </footer>
 
 
+        <script>
+            const login_btn = document.getElementById("login-btn")
+            const login_modal = document.getElementById("login-Modal")
+
+
+            login_btn.addEventListener('click',(e)=>{
+                if(login_modal.hasAttribute("isopened")){
+                    login_modal.style.display = "none"
+                    login_modal.removeAttribute('isopened')
+                } else{
+                    login_modal.style.display = "block"
+                    login_modal.setAttribute('isopened',true)
+                }
+                // console.log("clicked login btn");
+
+            })
+
+        </script>
 
 </body>
 

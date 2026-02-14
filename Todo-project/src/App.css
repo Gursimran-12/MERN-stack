@@ -1,166 +1,119 @@
 #root {
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
-    padding: 10px;
-    overflow: auto;
+width: 100%;
+min-height: 100vh;
+background: linear-gradient(135deg, #153677, #4e085f);
+padding: 10px;
+overflow: auto;
 }
 
+/* Remove default browser spacing */
+body {
+margin: 0;
+}
 
-/* Main Cards */
+/* Column container */
 .todo-app {
-    width: 50%;
-    max-width: 340px;
-    background: #fff;
-    margin: 40px 20px;
-    padding: 25px;
-    border-radius: 10px;
-    float: left;
-    color: black;
+width: 50%;
+max-width: 340px;
+background: #fff;
+margin: 40px 20px;
+padding: 25px;
+border-radius: 10px;
+float: left;
+color: black;
+position: relative;
 }
 
 .todo-app h2 {
-    color: #002765;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+color: #002765;
+margin-bottom: 20px;
 }
 
-.todo-app h2 img {
-    width: 30px;
-    margin-left: 10px;
-}
-
+/* Input row */
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 25px;
-    padding-left: 15px;
-    margin-bottom: 20px;
-    color: black;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: #edeef0;
+border-radius: 25px;
+padding-left: 15px;
+margin-bottom: 20px;
 }
 
 input {
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
-    font-size: 14px; 
-    color: black;
+flex: 1;
+border: none;
+outline: none;
+background: transparent;
+padding: 10px;
+font-size: 14px;
+color: black;
 }
 
 button {
-    border: none;
-    outline: none;
-    padding: 12px 25px;
-    background: #ff5945;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 25px;
+border: none;
+outline: none;
+padding: 12px 25px;
+background: #ff5945;
+font-size: 14px;
+cursor: pointer;
+border-radius: 25px;
+color: white;
 }
 
-ul li {
-    list-style: none;
-    font-size: 16px;
-    padding: 12px 8px 12px 45px;
-    user-select: none;
-    cursor: pointer;
-    position: relative;
-}
-
-ul li.checked {
-    color: #555;
-    text-decoration: line-through;
-}
-
-
-ul li span {
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-    color: #555;
-    line-height: 35px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-ul li span:hover {
-    background: #edeef0;
-}
-
-
-@media (max-width: 600px) {
-
-    .todo-app {
-        width: 100%;
-        float: none;   
-        margin: 20px auto;
-    }
-
-    button {
-        padding: 10px 15px;
-        font-size: 13px;
-    }
-
-    input {
-        font-size: 13px;
-    }
-}
-
-/* Child Component Card */
-.card-manager {
-  text-align: center;
-  padding: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.add-btn {
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 12px 18px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-
-.card-container {
-  margin-top: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-
+/* Cards */
 .card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 15px;
-  width: 200px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  text-align: center;
+background: #ffffff;
+border-radius: 14px;
+padding: 18px;
+margin-bottom: 14px;
+box-shadow:
+0 6px 14px rgba(0, 0, 0, 0.12),
+inset 0 1px 0 rgba(255, 255, 255, 0.6);
+transition: all 0.2s ease;
 }
 
-.card-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.card:hover {
+transform: translateY(-3px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
 }
 
-.delete-btn {
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
+.card p {
+margin: 0 0 12px;
+font-size: 15px;
+font-weight: 500;
+color: #1f2937;
+}
+
+/* Card actions */
+.card-actions {
+display: flex;
+justify-content: center;
+gap: 10px;
+font-size: 12px;
+color: #555;
+cursor: pointer;
+}
+
+.card-actions span:hover {
+text-decoration: underline;
+color: #000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+.todo-app {
+width: 100%;
+float: none;
+margin: 20px auto;
+}
+
+button {
+padding: 10px 15px;
+font-size: 13px;
+}
+
+input {
+font-size: 13px;
+}
 }
