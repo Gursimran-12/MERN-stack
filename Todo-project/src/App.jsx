@@ -18,6 +18,7 @@ export default function App() {
 
   // Add card
   function addCard(column, text, id) {
+    console.log('Added card!');
     const newBoard = { ...board };
     newBoard[column].push({ id, text });
     setBoard(newBoard);
@@ -25,6 +26,7 @@ export default function App() {
 
   // Delete card
   function deleteCard(column, id) {
+    console.log('Card Deleted!');
     const newBoard = { ...board };
     newBoard[column] =
       newBoard[column].filter(card => card.id !== id);
@@ -33,6 +35,7 @@ export default function App() {
 
   // Move card left/right
   function moveCard(from, to, id) {
+    console.log("Card is moving either left or right");
     const card =
       board[from].find(c => c.id === id);
 
@@ -50,6 +53,7 @@ export default function App() {
 
   // Reorder inside column
   function reorder(column, index, direction) {
+    console.log('Card is moving either up or down');
     const newCards = [...board[column]];
 
 
@@ -79,6 +83,7 @@ export default function App() {
   return (<div> <button onClick={clearBoard}>
     Clear Board </button>
 
+{/* column Component calling  along with the properties*/}
 
     <Column
       title="Todo"
