@@ -36,8 +36,6 @@ export default function App() {
       return;
     }
 
-    const id = name.toLowerCase().replace(/\s+/g, "-");
-
     if (board[id]) {
       alert("Column already exists!");
       return;
