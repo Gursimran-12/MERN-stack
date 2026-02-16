@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Card from "./components/card";
 import { v4 as uuidv4 } from "uuid";
 import './App.css'
@@ -6,6 +6,7 @@ import './App.css'
 export default function Column({ title, name, cards, addCard, deleteCard, moveCard, reorder, editCard, toggleDone, deleteColumn }) {
 
     const inputRef = useRef(null);
+    const [showEmptyModal, setShowEmptyModal] = useState(false);
 
     function handleAdd() {
         const text = inputRef.current.value.trim();
@@ -13,7 +14,7 @@ export default function Column({ title, name, cards, addCard, deleteCard, moveCa
         // Ensuring that the input box should not be empty
         if (!text) {
             console.log('Input field is empty');
-            alert("Please write something before adding a card!");
+            setShowEmptyModal(true);
             return;
         }
 
@@ -51,6 +52,20 @@ export default function Column({ title, name, cards, addCard, deleteCard, moveCa
             <Card key={card.id} card={card} index={index} column={name} deleteCard={deleteCard}
                 moveCard={moveCard} reorder={reorder} editCard={editCard} toggleDon={toggleDone} />
         ))}
+
+        {showEmptyModal && (
+            <div className="modal">
+                <div className="modal-box">
+
+                    <p>Please write something before adding a card!</p>
+
+                    <button onClick={() => setShowEmptyModal(false)}>
+                        OK
+                    </button>
+
+                </div>
+            </div>
+        )}
     </div>
 
     );
