@@ -3,13 +3,13 @@ import Card from "./components/card";
 import { v4 as uuidv4 } from "uuid";
 import './App.css'
 
-export default function Column({ title, name, cards, addCard, deleteCard, moveCard, reorder }) {
+export default function Column({ title, name, cards, addCard, deleteCard, moveCard, reorder, editCard, toggleDone, deleteColumn }) {
 
     const inputRef = useRef(null);
 
     function handleAdd() {
         const text = inputRef.current.value.trim();
-        
+
         // Ensuring that the input box should not be empty
         if (!text) {
             console.log('Input field is empty');
@@ -24,7 +24,21 @@ export default function Column({ title, name, cards, addCard, deleteCard, moveCa
     return (<div className="todo-app">
 
 
-        <h2>{title}</h2>
+        <div className="column-header">
+            <h2>{title}</h2>
+
+            {name !== "todo" &&
+                name !== "doing" &&
+                name !== "done" && (
+
+                    <button
+                        className="delete-column"
+                        onClick={() => deleteColumn(name)}
+                    >
+                        X
+                    </button>
+                )}
+        </div>
 
         <div className="row">
             <input ref={inputRef} placeholder="Add card..." />
@@ -35,7 +49,7 @@ export default function Column({ title, name, cards, addCard, deleteCard, moveCa
 
         {cards.map((card, index) => (
             <Card key={card.id} card={card} index={index} column={name} deleteCard={deleteCard}
-                moveCard={moveCard} reorder={reorder} />
+                moveCard={moveCard} reorder={reorder} editCard={editCard} toggleDon={toggleDone} />
         ))}
     </div>
 

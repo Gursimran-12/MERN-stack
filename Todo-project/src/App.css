@@ -100,6 +100,49 @@ text-decoration: underline;
 color: #000;
 }
 
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modalBtn
+{
+    margin: 10px;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px; 
+  padding: 10px 20px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-column {
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
 .todo-app {
