@@ -50,7 +50,7 @@ export default function Column({ title, name, cards, addCard, deleteCard, moveCa
 
         {cards.map((card, index) => (
             <Card key={card.id} card={card} index={index} column={name} deleteCard={deleteCard}
-                moveCard={moveCard} reorder={reorder} editCard={editCard} toggleDon={toggleDone} />
+                moveCard={moveCard} reorder={reorder} editCard={editCard} toggleDone={toggleDone} />
         ))}
 
         {showEmptyModal && (
