@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Column from "./Column.jsx";
+import Column from "./column.jsx";
 
 export default function App() {
 
