@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Column from "./column.jsx";
 
 export default function App() {
@@ -6,23 +6,42 @@ export default function App() {
   const [showModal, setShowModal] = useState(false);
   const [showAddModal, setShowAddModal] = useState(false);
   const [newColumnName, setNewColumnName] = useState("");
+  const addInputRef = useRef(null);
 
-  const [columns, setColumns] = useState([
-    { id: "todo", title: "Todo" },
-    { id: "doing", title: "Doing" },
-    { id: "done", title: "Done" }
-  ]);
+  const [columns, setColumns] = useState(() => {
+    const saved = localStorage.getItem("kanban-columns");
 
-  const [board, setBoard] = useState(() => {
-    const saved = localStorage.getItem("kanban-board");
     return saved
       ? JSON.parse(saved)
-      : { todo: [], doing: [], done: [] };
+      : [
+        { id: "todo", title: "Todo" },
+        { id: "doing", title: "Doing" },
+        { id: "done", title: "Done" }
+      ];
+  });
+
+  const [board, setBoard] = useState(() => {
+    try {
+      const saved = localStorage.getItem("kanban-board");
+      return saved ? JSON.parse(saved) : { todo: [], doing: [], done: [] };
+    } catch {
+      return { todo: [], doing: [], done: [] };
+    }
   });
 
   useEffect(() => {
     localStorage.setItem("kanban-board", JSON.stringify(board));
   }, [board]);
+
+  useEffect(() => {
+    localStorage.setItem("kanban-columns", JSON.stringify(columns));
+  }, [columns]);
+
+  useEffect(() => {
+    if (showAddModal && addInputRef.current) {
+      addInputRef.current.focus();
+    }
+  }, [showAddModal]);
 
 
   function addColumn() {
@@ -86,13 +105,13 @@ export default function App() {
   }
 
   function editCard(column, id, newText) {
-    const newBoard = { ...board };
-
-    newBoard[column] = newBoard[column].map(card =>
-      card.id === id ? { ...card, text: newText } : card
-    );
-
-    setBoard(newBoard);
+    if (!newText.trim()) return;
+    setBoard(prev => ({
+      ...prev,
+      [column]: prev[column].map(card =>
+        card.id === id ? { ...card, text: newText } : card
+      )
+    }));
   }
 
   function toggleDone(column, id) {
@@ -181,6 +200,7 @@ export default function App() {
             <p>Enter column name:</p>
 
             <input
+              ref={addInputRef}
               value={newColumnName}
               onChange={(e) => setNewColumnName(e.target.value)}
             />
