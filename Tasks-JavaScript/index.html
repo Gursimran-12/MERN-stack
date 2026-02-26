@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .active {
+            background: #4caf50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h3 id="question-text">Click Start to begin</h3>
+
+        <button id="start-quiz">Start Quiz</button>
+        <br>
+
+        <button class="option-btn">Option A</button>
+        <button class="option-btn">Option B</button>
+        <button class="option-btn">Option C</button>
+        <button class="option-btn">Option D</button>
+
+        <p>Score: <span id="quiz-score">0</span></p>
+    </div>
+    <hr>
+    <hr>
+    <div id="products">
+        <button onclick="addToCart('Laptop', 50000)">Add Laptop (50k)</button>
+        <button onclick="addToCart('Mobile', 20000)">Add Mobile (20k)</button>
+        <button onclick="addToCart('USB', 500)">Add USB (500)</button>
+    </div>
+    <h3>Cart:</h3>
+    <ul id="cart-list"></ul>
+    <h4>Total Bill: ₹<span id="total-price">0</span></h4>
+    <hr>
+    <div class="tabs">
+        <button class="tab-btn" data-target="home">Home</button>
+        <button class="tab-btn" data-target="profile">Profile</button>
+        <button class="tab-btn" data-target="settings">Settings</button>
+    </div>
+    <div id="home" class="content-box">Welcome to Home!</div>
+    <div id="profile" class="content-box hidden">User Profile: Abc</div>
+    <div id="settings" class="content-box hidden">Settings Area</div>
+    <hr>
+    <input id="taskInput" type="text" placeholder="Enter task">
+    <button onclick="addTask()">Add Task</button>
+
+    <br><br>
+
+    <button onclick="showAll()">Show All</button>
+    <button onclick="showActive()">Show Active</button>
+    <button onclick="showCompleted()">Show Completed</button>
+
+    <h3>Tasks:</h3>
+    <ul id="taskList"></ul>
+    <hr>
+    
+    <form id="signup-form">
+        <input type="text" id="username" placeholder="Username (min 5 chars)"><br>
+        <span id="user-error" style="color: red; display: none;">Too short!</span><br>
+
+        <input type="password" id="pass" placeholder="Password (min 8 chars)"><br>
+        <span id="pass-error" style="color: red; display: none;">Weak password!</span><br>
+
+        <input type="password" id="confirm-pass" placeholder="Confirm Password"><br>
+        <span id="match-error" style="color: red; display: none;">Passwords don't match!</span><br>
+
+        <button id="submit-btn" disabled>Sign Up</button>
+    </form>
+    <script src="./script/script.js"> </script>
+</body>
+
+</html>
