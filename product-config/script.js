@@ -42,6 +42,7 @@ function addRam() {
         li.textContent = btn1.textContent;
         console.log(li);
         summary.appendChild(li);
+        addtoCart("8GB", 0);
     })
     const btn2 = document.createElement("button")
     btn2.textContent = "16GB (+Rs 8000)"
@@ -51,6 +52,7 @@ function addRam() {
         li.textContent = btn2.textContent;
         console.log(li);
         summary.appendChild(li);
+        addtoCart("16GB", 8000);
     })
 
     const btn3 = document.createElement("button")
@@ -61,6 +63,7 @@ function addRam() {
         li.textContent = btn3.textContent;
         console.log(li);
         summary.appendChild(li);
+        addtoCart("32GB", 16000);
     })
 
 
